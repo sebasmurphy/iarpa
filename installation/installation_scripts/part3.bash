@@ -11,4 +11,4 @@ tar xzvf laszip-src-2.2.0.tar.gz
 cd laszip-src-2.2.0/
 ./configure
 make -j${MAKE_JOBS}
-sudo make install
+make install

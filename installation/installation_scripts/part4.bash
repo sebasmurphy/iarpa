@@ -22,4 +22,4 @@ cmake -G "Unix Makefiles" \
 	-DENABLE_CTEST=ON \
 	..
 make -j${MAKE_JOBS}
-sudo make install
+make install

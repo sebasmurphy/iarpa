@@ -11,7 +11,7 @@ mkdir build
 cd build
 cmake ..
 make -j${MAKE_JOBS}
-sudo make install
+make install
 
 # build gdal
 cd ${WORKING_DIR}
@@ -20,7 +20,7 @@ tar xvf gdal-2.1.0.tar.gz
 cd gdal-2.1.0/
 ./configure
 make -j${MAKE_JOBS}
-sudo make install
+make install
 
 # remove potential duplicate gdal
-sudo apt-get --assume-yes remove libgdal1h libgdal-dev
+apt-get --assume-yes remove libgdal1h libgdal-dev
